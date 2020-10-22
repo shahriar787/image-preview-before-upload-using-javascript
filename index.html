@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Image Before Uploading Using Javascript - Code by Shahriar Shakil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="featured-image">
+            <h2>Upload Image</h2>
+            <label for="featured_image">Featured Image</label>
+            <input type="file" name="featured_image[]" id="featured_image" class="featured_image" multiple="multiple" onchange="preview_upload_image()" />
+        </div><!--form-group-->
+        <div id="preview-post-img"></div> <!-- preview-post-img -->
+    </form><!-- Form -->
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
